@@ -5,20 +5,17 @@
 
 body{
     background-image: linear-gradient(to right bottom, #1c2531, #103a5b, #16658c, #1294bd, #12c6eb);
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
+    background-size: cover;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; 
-    
+    min-height: 100vh;
 }
 
 .container{
     width: 96%;
     max-width: 600px;
     background-color: #EEE;
-    transform: translate(0% , -15%);
     border-radius: 5px;
 }
 

@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: linear-gradient(to right bottom, #1c2531, #103a5b, #16658c, #1294bd, #12c6eb);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    
+}
+
+.container{
+    width: 96%;
+    max-width: 600px;
+    background-color: #EEE;
+    transform: translate(0% , -15%);
+    border-radius: 5px;
+}
+
+.title-head, .time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+
+    
+}
+.footer{
+    display: none;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.time{
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(22, 194, 246, 0.4);
+    border-radius: 7px;   
+    display: none; 
+    transition: all 0.3s ease-in-out;
+
+}
+
+.time span{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #333;
+    padding: 4px 10px;
+}
+
+.time h4{
+    background-color: #1c2531;
+    margin-left: auto;
+    margin-right: 15px;
+    color: #EEE;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 5px 12px;
+    border-radius: 5px ;
+    font-family: Bitter;
+}
+
+#h3-head, #h3-bottom{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    padding: 10px;
+    font-weight: 600;
+
+}
+
+.title-head{
+    box-shadow: 0 0 5px rgb(123, 120, 120);
+    padding: 0 10px;
+    font-family: "Give You Glory";
+}
+
+#current-question{
+    margin: 10px;
+    font-family: Bitter;
+    font-size: 30px;
+    font-weight: 500;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.question{
+    margin: 20px;
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #EEE;
+    opacity: 1;
+}
+.welcome h1, h2{
+    font-weight: 500;
+    color: #333;
+    padding: 10px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.welcome h1{
+    font-size: 3rem;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    font-family: "Give You Glory";
+}
+.end{
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.end h2{
+    font-size: 1.4em;
+    padding: 10px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    font-family: "Give You Glory";
+}
+.end h3{
+    font-weight: 500;
+    font-size: 1.4em;
+    color: #333;
+    padding: 10px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.start-end{
+    background-color: #1c2531;
+    color: #EEE;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: Bitter;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 40px;
+}
+.answers{
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;  
+     
+}
+
+.choice{
+    text-align: left;
+    width: 92%;
+    max-width: 600px;
+    padding: 11px;
+    margin: 0 auto;
+    color: #EEE;
+    font-size: 17px;
+    background-color: rgba(3, 94, 128, 0.667);
+    border-radius: 7px;
+    border: 3px solid rgb(218, 204, 204);
+    cursor: pointer;
+}
+
+.choice:hover{
+    background-color: #0d425c;
+    color: rgb(208, 205, 205);
+}
+
+#h3-bottom{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.next{
+    background-color: #16658c;
+    color: #EEE;
+    width: auto;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-right: 5px;
+}
+button:hover{
+    background-color: #0d425c;
+    color: rgb(208, 205, 205);
+}
+
+.selected{
+    background-color: #0d425c;
+    color: rgb(208, 205, 205);
+}
+
+button{
+    cursor: pointer;
+}
+
+#error{
+    color: red;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 40px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    display: none;
+    transition: all 0.3s ease-in-out;
+
+}

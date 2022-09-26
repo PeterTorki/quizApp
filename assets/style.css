@@ -4,6 +4,7 @@
 }
 
 body{
+    font-family: 'Trebuchet MS';
     background-image: linear-gradient(to right bottom, #1c2531, #103a5b, #16658c, #1294bd, #12c6eb);
     display: flex;
     background-size: cover;
@@ -24,9 +25,8 @@ body{
     align-items: center;
     justify-content: space-between;
     transition: all 0.3s ease-in-out;
-
-    
 }
+
 .footer{
     display: none;
     transition: all 0.3s ease-in-out;
@@ -41,7 +41,6 @@ body{
     border-radius: 7px;   
     display: none; 
     transition: all 0.3s ease-in-out;
-
 }
 
 .time span{
@@ -69,7 +68,6 @@ body{
     color: #333;
     padding: 10px;
     font-weight: 600;
-
 }
 
 .title-head{
@@ -171,6 +169,7 @@ body{
     border-radius: 7px;
     border: 3px solid rgb(218, 204, 204);
     cursor: pointer;
+    font-family: 'Trebuchet MS';
 }
 
 .choice:hover{
@@ -218,5 +217,4 @@ button{
     font-size: 20px;
     display: none;
     transition: all 0.3s ease-in-out;
-
 }
